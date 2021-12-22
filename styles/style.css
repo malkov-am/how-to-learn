@@ -61,6 +61,7 @@
   right: 0;
   width: 765px;
   height: 608px;
+  object-fit: cover;
 }
 
 .header__square-pic {
@@ -117,10 +118,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-}
-
-.section-title_theme_light {
-  margin: 100px auto 20px auto;
+  margin: 0 auto 20px auto;
 }
 
 .section-subtitle {
@@ -129,9 +127,6 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-}
-
-.section-subtitle_theme_light {
   margin: 0 auto 0 auto;
 }
 
@@ -140,17 +135,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
-}
-
-.table_theme_light {
   margin: 0 auto 100px auto;
 }
 
 .table__cell {
   width: 250px;
-}
-
-.table__cell_theme_light {
   margin-top: 60px;
 }
 
@@ -158,16 +147,10 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
-  margin: 20px 0 0 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.table__author {
   margin: 20px 0 0 0;
   line-height: 1.2;
   font-size: 18px;
@@ -194,6 +177,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  margin: 0 auto;
 }
 
 .feyman__link {
@@ -214,8 +198,10 @@
 }
 
 .kaufman__triangle {
+  background: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
+  background-size: 877px 877px;
   position: absolute;
   top: 0;
   right: -210px;
@@ -225,14 +211,14 @@
 .section-title_theme_dark {
   color: white;
   margin: 90px auto 20px auto;
-  position: relative; /* Для того, чтобы работал z-index и синий треугольник не перекрывал заголовок на низких разрешениях */
+  position: relative;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: white;
+  position: relative;
   z-index: 1;
-  margin: 0 auto 0 auto;
 }
 
 .table_theme_dark {
@@ -243,6 +229,7 @@
   color: white;
   z-index: 1;
   width: 200px;
+  margin: 0;
 }
 
 .table__heading_theme_dark {
@@ -271,7 +258,7 @@
 }
 
 .logo__place_footer {
-  height: 35px; /* В макете дана высота логотипа в блоке footer 35px вместо 32px как в блоке header, а ширина одинаковая. Похоже на ошибку в макете. */
+  height: 35px;
 }
 
 .footer__author {
