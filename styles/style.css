@@ -173,14 +173,14 @@
   font-weight: bold;
 }
 
-.feyman__subtitle {
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   margin: 0 auto;
 }
 
-.feyman__link {
+.feynman__link {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -257,7 +257,7 @@
   justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   height: 35px;
 }
 
