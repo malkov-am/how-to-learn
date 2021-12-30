@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -13,6 +22,7 @@
   align-items: center;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
 }
 
 .logo {
@@ -53,6 +63,11 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition: all 0.4s;
+}
+
+.header__link:hover {
+  opacity: 0.8;
 }
 
 .header__main-illustration {
@@ -73,12 +88,20 @@
   right: 0;
 }
 
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
+.description {
+  padding: 100px 0;
+}
+
 .two-columns {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 80%;
-  margin: 100px auto;
+  margin: 0px auto;
 }
 
 .two-columns__main-text {
@@ -112,6 +135,10 @@
   font-weight: bold;
 }
 
+.digits {
+  padding: 100px 0;
+}
+
 .section-title {
   width: 60%;
   text-align: center;
@@ -130,12 +157,51 @@
   margin: 0 auto 0 auto;
 }
 
+.techniques {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.cards {
+  margin: 0 auto;
+  width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 100px;
+}
+
+.cards__item {
+  width: 240px;
+  text-align: center;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 60px 40px 43px 40px;
+}
+
+.cards__title {
+  margin: 0 0 16px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cards__description {
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 0 auto;
 }
 
 .table__cell {
@@ -155,6 +221,29 @@
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+}
+
+.video {
+  padding-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  position: relative;
+  top: 50px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  border: none;
+}
+
+.oakley {
+  background-color: #f2f2f2;
+  padding-top: 160px;
 }
 
 .feynman {
@@ -189,12 +278,90 @@
   right: 48px;
   text-decoration: none;
   color: #2f80ed;
+  transition: all 0.4s;
+}
+
+.feynman__link:hover {
+  opacity: 0.8;
+}
+
+.khan {
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0 0 50px 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.khan__quote {
+  width: 790px;
+  margin: 0 0 36px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0 0 10px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.khan__quote-author-subline {
+  margin: 0 0 68px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 48px;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.khan__buy-link {
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  transition: all 0.4s;
+}
+
+.khan__buy-link:hover {
+  opacity: 0.8;
 }
 
 .kaufman {
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  padding-bottom: 90px;
 }
 
 .kaufman__triangle {
@@ -221,10 +388,6 @@
   z-index: 1;
 }
 
-.table_theme_dark {
-  margin: 0 auto 90px auto;
-}
-
 .table__cell_theme_dark {
   color: white;
   z-index: 1;
@@ -234,6 +397,28 @@
 
 .table__heading_theme_dark {
   margin: 80px 0 0 0;
+}
+
+.resources {
+  padding: 100px 0 217px 0;
+}
+
+.resources__logo-zone {
+  list-style: none;
+  min-width: 1100px;
+  justify-content: center;
+  display: flex;
+  margin: 80px 0 0 0;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  transition: all 0.4s;
+}
+
+.resources__logo:hover {
+  opacity: 0.8;
 }
 
 .footer {
@@ -294,6 +479,11 @@
   font-weight: normal;
   text-decoration: none;
   color: white;
+  transition: all 0.4s;
+}
+
+.footer__column-link:hover {
+  opacity: 0.8;
 }
 
 .footer__social-icon {
